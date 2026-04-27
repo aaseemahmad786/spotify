@@ -11,7 +11,7 @@ const musicRoutes=require('./routes/music.routes');
 const app=express();
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://spotify-eqgk.onrender.com',
     credentials: true
 }));
 app.use(express.json());
