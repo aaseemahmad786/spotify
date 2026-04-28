@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     const fetchSongs = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/music');
+        const response = await fetch('https://spotify-eqgk.onrender.com/api/music');
         const data = await response.json();
         setSongs(data);
         setFilteredSongs(data);

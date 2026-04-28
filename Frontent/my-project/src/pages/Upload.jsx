@@ -36,7 +36,7 @@ const Upload = () => {
 
     try {
       // Backend expects 'music' field name as per music.routes.js: router.post("/upload",upload.single("music"), ...)
-      const response = await fetch('http://localhost:3000/api/music/upload', {
+      const response = await fetch('https://spotify-eqgk.onrender.com/api/music/upload', {
         method: 'POST',
         credentials: 'include',
         // Credentials include cookies (JWT token)
